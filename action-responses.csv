@@ -1,0 +1,84 @@
+id,resource_type,locator,translatable_string
+99e1da8d-b49f-4714-bcc1-99fab6507ed0,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_512""].output.generic[0].values[0].text_expression","""Let me get that information for you. Do you know which store you'd like to visit?"""
+08d00714-991c-4186-af70-4900c9eb6cd1,ACTION_STEP_HANDLER_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""action_26747""].steps[step=""step_512""].handlers[handler=""validation_not_found_handler""].output.generic[0].values[0].text","""I didn't catch that. Please select a valid option from the dropdown below:"""
+d7879e63-5fa0-4667-ba4b-ec85b1b4a2ba,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_604""].output.generic[0].values[0].text_expression","""No problem! We can help you find the store closest to you. What's your **zip code**?"""
+bdca415e-6d43-4d10-9c85-a4d3a62ddebf,ACTION_STEP_HANDLER_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""action_26747""].steps[step=""step_604""].handlers[handler=""validation_not_found_handler""].output.generic[0].values[0].text","""I didn't catch that. Enter a number."""
+819add02-6865-4c7d-960a-67d3caf445a5,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_608""].output.generic[0].values[0].text_expression","""Thanks! Your closest store is in **Hollywood**.
+
+<br />
+
+
+
+Our hours are **7am-6pm PST, Mondays through Fridays.**
+
+<br />
+
+
+
+You can also find directions to our store [here](https://goo.gl/maps/QbgJCXHS9dgPSFsz8)."""
+3036c6a3-0012-466c-9341-2ad26d9f8140,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""action_26747""].steps[step=""step_608""].condition.and[1].lt[1].scalar","""30000"""
+0c8edc43-1cbc-4d54-9d0f-336874cc2e2a,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_629""].output.generic[0].values[0].text_expression","""Thanks! Your closest store is in **Tribeca**.
+
+<br />
+
+
+
+Our hours are **9am-3pm EST, Mondays through Saturdays.**
+
+<br />
+
+
+
+You can also find directions to our store [here](https://goo.gl/maps/zLy98rAcbAQ2UPyZ7)."""
+b33486c5-3c76-489c-91e4-ec78d22ca373,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""action_26747""].steps[step=""step_629""].condition.gte[1].scalar","""30000"""
+ba74aac0-0cf0-463b-a927-146b41330cfe,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_436""].output.generic[0].values[0].text_expression","""Great! Which store are you inquiring about today?"""
+6be31577-8de2-4d17-8320-79479caa3e2f,ACTION_STEP_HANDLER_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""action_26747""].steps[step=""step_436""].handlers[handler=""validation_not_found_handler""].output.generic[0].values[0].text","""I didn't catch that. Please select a region from the options below:"""
+6f913435-35b7-4a77-8089-5875cad52781,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_469""].output.generic[0].values[0].text_expression","""Thanks! Our ${var(step_436)} store hours are between **9am-3pm EST, Mondays through Saturdays.**"""
+cbc07d21-3800-438c-93c7-7cc32b923369,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_747""].output.generic[0].values[0].text_expression","""Thanks! Our ${var(step_436)} store hours are between **7am-6pm PST, Mondays through Fridays.**"""
+d6195fa7-b279-4fac-96c0-cf5baf868986,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""action_26747""].steps[step=""step_440""].output.generic[0].values[0].text_expression","""Thanks! Our ${var(step_436)} store hours are between **10am-6pm CST, Mondays through Thursdays.**"""
+66c45547-163b-4fb1-a1d2-ec3739b36907,ACTION_TITLE,"workspace.actions[action=""action_26747""].title","""Request store hours"""
+eab14fea-e7e3-445a-a025-fefc16569684,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""welcome""].steps[step=""step_001""].output.generic[0].values[0].text","""Welcome, how can I assist you?"""
+1de607f8-6568-4ff8-9ca7-1d4847aca9f3,ACTION_TITLE,"workspace.actions[action=""welcome""].title","""Greet customer"""
+72df47d8-3ff3-41de-ae92-ffa073cf299c,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""fallback""].steps[step=""digression_failure""].output.generic[0].values[0].text","""Sorry I couldn't confirm if you wanted to return to previous topic, let me connect to an agent."""
+fb84ee87-6779-4901-9aaa-c05dc7f3972f,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_AVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""digression_failure""].resolver[type=""connect_to_agent""].response.agent_available.message","""Let's send you to an available agent."""
+33561d66-8a0a-4721-b026-f47c9dff7f58,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_UNAVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""digression_failure""].resolver[type=""connect_to_agent""].response.agent_unavailable.message","""There are no agents available at this time. When one becomes available, we'll connect you."""
+f8d9039c-dec8-432c-bc4d-88ac79824752,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_HUMAN_AGENT_MSG,"workspace.actions[action=""fallback""].steps[step=""digression_failure""].resolver[type=""connect_to_agent""].response.message_to_human_agent",""""""
+891691d0-082e-4263-8f10-f4d38f3bd03a,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""fallback""].steps[step=""digression_failure""].condition.eq[1].scalar","""Failed to confirm topic return"""
+72f4ec8e-b56c-4853-9b8c-699e32ce4723,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""fallback""].steps[step=""step_001""].output.generic[0].values[0].text","""I'm afraid I don't understand. I can connect you to an agent."""
+64dffdf6-5904-4294-8f62-a7689f8bbf76,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_AVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_001""].resolver[type=""connect_to_agent""].response.agent_available.message","""Let's send you to an available agent."""
+ade9ebdd-0945-4b1a-815f-f565a7694625,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_UNAVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_001""].resolver[type=""connect_to_agent""].response.agent_unavailable.message","""There are no agents available at this time. When one becomes available, we'll connect you."""
+2a20b175-3fa2-4c73-9930-656b9b248acd,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_HUMAN_AGENT_MSG,"workspace.actions[action=""fallback""].steps[step=""step_001""].resolver[type=""connect_to_agent""].response.message_to_human_agent",""""""
+6f3e05c5-0bfb-4ba3-be3d-2f7291173ee3,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""fallback""].steps[step=""step_001""].condition.eq[1].scalar","""Step validation failed"""
+c06bdc17-b832-4073-8532-19c62ddd7f0f,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""fallback""].steps[step=""step_002""].output.generic[0].values[0].text","""Sorry I couldn't assist you. I will connect you to an agent right away."""
+bc69d4f9-513b-4552-8167-a949ab11b643,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_AVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_002""].resolver[type=""connect_to_agent""].response.agent_available.message","""Let's send you to an available agent."""
+58337666-0cf8-4a5e-ac0c-aa80c7382762,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_UNAVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_002""].resolver[type=""connect_to_agent""].response.agent_unavailable.message","""There are no agents available at this time. When one becomes available, we'll connect you."""
+1335b147-b6c4-4372-8a44-1e4452f66f84,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_HUMAN_AGENT_MSG,"workspace.actions[action=""fallback""].steps[step=""step_002""].resolver[type=""connect_to_agent""].response.message_to_human_agent",""""""
+ab15f459-bced-4c59-adf6-911a4f078a61,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""fallback""].steps[step=""step_002""].condition.eq[1].scalar","""Agent requested"""
+ce314196-0a0d-4402-ab30-82c7ba08bc16,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""fallback""].steps[step=""step_003""].output.generic[0].values[0].text","""I am afraid I do not understand what you are asking, let me connect you to an agent."""
+6ee23d2e-59ab-4707-a671-20cdaebf260c,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_AVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_003""].resolver[type=""connect_to_agent""].response.agent_available.message","""Let's send you to an available agent."""
+a0b497c0-cd9b-46f5-a474-7cb7b36121d9,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_UNAVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_003""].resolver[type=""connect_to_agent""].response.agent_unavailable.message","""There are no agents available at this time. When one becomes available, we'll connect you."""
+4eb3969a-1d79-44bd-9a97-0346559e06cf,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_HUMAN_AGENT_MSG,"workspace.actions[action=""fallback""].steps[step=""step_003""].resolver[type=""connect_to_agent""].response.message_to_human_agent",""""""
+842c52a0-5882-448f-8f0b-48bfc67ece43,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""fallback""].steps[step=""step_003""].condition.eq[1].scalar","""No action matches"""
+71892465-d6a7-4835-8b35-e67b25d71101,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""fallback""].steps[step=""step_004""].output.generic[0].values[0].text","""It seems this conversation would be best managed by a human agent. Let me connect you to one of our agents."""
+6c4842d1-11d7-443a-aedf-7c818a305ff6,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_AVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_004""].resolver[type=""connect_to_agent""].response.agent_available.message","""Let's send you to an available agent."""
+948d0bf6-0782-4899-94a2-e50edcc65549,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_UNAVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_004""].resolver[type=""connect_to_agent""].response.agent_unavailable.message","""There are no agents available at this time. When one becomes available, we'll connect you."""
+9015ef7e-6191-45bb-8960-c218fdd986c2,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_HUMAN_AGENT_MSG,"workspace.actions[action=""fallback""].steps[step=""step_004""].resolver[type=""connect_to_agent""].response.message_to_human_agent",""""""
+d5440b79-cbcc-438d-8056-0b7df77ec705,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""fallback""].steps[step=""step_004""].condition.eq[1].scalar","""Danger word detected"""
+33f5f377-851c-4019-9ce2-43822727e1a9,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""fallback""].steps[step=""step_005""].output.generic[0].values[0].text","""It seems this conversation would be best managed by a human agent. Let me connect you to one of our agents."""
+e96b0422-407b-40eb-860e-decf944f8407,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_AVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_005""].resolver[type=""connect_to_agent""].response.agent_available.message","""Let's send you to an available agent."""
+cee78789-1e74-4e48-84c3-b692eabf4236,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_UNAVAILABLE_MSG,"workspace.actions[action=""fallback""].steps[step=""step_005""].resolver[type=""connect_to_agent""].response.agent_unavailable.message","""There are no agents available at this time. When one becomes available, we'll connect you."""
+260d5bc7-04ae-405c-89b9-1679ad1c1be6,ACTION_STEP_RESOLVER_CONNECT_TO_AGENT_HUMAN_AGENT_MSG,"workspace.actions[action=""fallback""].steps[step=""step_005""].resolver[type=""connect_to_agent""].response.message_to_human_agent",""""""
+b5d20105-682e-48cb-bf9e-07419c3b882c,ACTION_STEP_CONDITION_SCALAR,"workspace.actions[action=""fallback""].steps[step=""step_005""].condition.eq[1].scalar","""Profanity detected"""
+2d9c1dc1-f1a3-4649-b051-ff22ca133460,ACTION_TITLE,"workspace.actions[action=""fallback""].title","""Fallback"""
+419f55a6-084a-4b37-9abd-c90f9e7e3d98,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT_EXPRESSION,"workspace.actions[action=""run_always""].steps[step=""profanity_detected""].output.generic[0].values[0].text_expression","""Please use appropriate language when interacting with the assistant."""
+c896f31b-6760-443a-acdc-176a650808e8,ACTION_TITLE,"workspace.actions[action=""run_always""].title","""Trigger word detected"""
+892aafae-1c27-475a-afcf-54a5062ef101,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""anything_else""].steps[step=""step_001""].output.generic[0].values[0].text","""I'm afraid I don't understand. Please rephrase your question."""
+4936737c-dd79-4505-9433-5a16c1d089bc,ACTION_STEP_OUTPUT_GENERIC_VALUES_TEXT,"workspace.actions[action=""anything_else""].steps[step=""step_002""].output.generic[0].values[0].text",""""""
+3bdaf824-551c-4320-a8fd-ef1bb71e5ccb,ACTION_TITLE,"workspace.actions[action=""anything_else""].title","""No matches"""
+e14cdce9-7483-4b00-a4ea-f595625e0e49,SYS_SETTINGS_TOPIC_SWITCH_MSGS_CONFIRMATION_FAILURE_GENERIC_VALUES_TEXT_EXPRESSION,workspace.system_settings.topic_switch.messages.confirmation_failure.generic[0].values[0].text_expression.concat,"""I'm sorry, I did not catch that, please confirm."""
+1b97e68f-c071-41d5-9fc1-647d3ddb48ac,SYS_SETTINGS_TOPIC_SWITCH_MSGS_CONFIRMATION_REQUEST_GENERIC_VALUES_TEXT_EXPRESSION,workspace.system_settings.topic_switch.messages.confirmation_request.generic[0].values[0].text_expression.concat,"""Do you want to continue with the previous topic: ${sys_var(digressed_from)}?"""
+249b39bc-6f2c-4fc9-ae24-399653929bf9,SYS_SETTINGS_TOPIC_SWITCH_MSGS_CONFIRMATION_REQUEST_GENERIC_OPTIONS_LABEL,workspace.system_settings.topic_switch.messages.confirmation_request.generic[1].options[0].label,"""Yes"""
+dc2a8715-a756-44ef-8c66-c11e37d559bf,SYS_SETTINGS_TOPIC_SWITCH_MSGS_CONFIRMATION_REQUEST_GENERIC_OPTIONS_LABEL,workspace.system_settings.topic_switch.messages.confirmation_request.generic[1].options[1].label,"""No"""
+6da8762f-21f9-483f-93b1-e0a090000cb6,SYS_SETTINGS_DISAMBIGUATION_NONE_OF_ABOVE_PROMPT,workspace.system_settings.disambiguation.none_of_the_above_prompt,"""None of the above"""
+48cdf824-a2d6-4886-b33c-3557f37e5223,SYS_SETTINGS_DISAMBIGUATION_PROMPT,workspace.system_settings.disambiguation.prompt,"""Did you mean:"""
+46d07e60-c080-4b6c-b19f-72fd4e8f2cc8,SYS_SETTINGS_DISAMBIGUATION_SINGLE_ANSWER_CLARIFICATION_PROMPT,workspace.system_settings.disambiguation.single_answer_clarification_prompt,"""Something else"""
